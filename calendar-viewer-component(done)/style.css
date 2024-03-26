@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+/* write your CSS here */
+body {
+  background-color: #fefe;
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+* {
+  font-family: "Montserrat", sans-serif;
+}
+:root {
+  --primary: #171d35;
+}
+img {
+  display: none;
+}
+.calendar {
+  display: flex;
+  gap: 38px;
+  flex-direction: column;
+  max-width: 670px;
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 20px;
+}
+.calendar-content {
+  width: 550px;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 22px;
+}
+.calendar-content strong {
+  font-size: 18px;
+  color: var(--primary);
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+}
+.calendar-content span {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  font-size: 18px;
+}
+.calendar-content span:hover {
+  background-color: #ccc;
+}
+
+.current-date-label {
+  font-size: 36px;
+  color: var(--primary);
+}
+.calendar-top {
+  padding-right: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gray {
+  color: gray;
+}
+.active {
+  background-color: #744aff;
+  color: #fff;
+}
+.calendar-nav {
+  display: flex;
+  gap: 22px;
+}
+.calendar-nav svg {
+  font-weight: bold;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

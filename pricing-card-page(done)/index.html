@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Pricing Card Page</title>
+  </head>
+
+  <body>
+    <section class="pricing">
+      <div class="container">
+
+        <div class="pricing-banner bg-primary">
+          <p>Your current plan:</p>
+          <h4>Starter Trial <span class="trial-val"> 500MAUs</span></h4>
+        </div>
+
+        <div class="pricing-heading">
+          <h4>Choose a plan</h3>
+          <div class="pricing-options">
+            <p>Billed monthly</p>
+            <label for="planOption" class="plan-toggle">
+              <input
+                type="checkbox"
+                class="toggle-input"
+                name="planOption"
+                id="planOption"
+              />
+              <div class="toggle">
+                <div class="toggle-spinner"></div>
+              </div>
+            </label>
+            <p>Billed anually</p>
+          </div>
+        </div>
+
+        <div class="pricing-cards">
+            <div class="card">
+                <h4 class="plan-type">Starter</h4>
+                <h2 class="price">$19</h2>
+                <ul class="features">
+                    <li>500 MAUs</li>
+                    <li>3 projects</li>
+                    <li>Unlimited guides</li>
+                    <li>Unlimited flows</li>
+                    <li>Unlimited guides</li>
+                    <li>Unlimited guides</li>
+                </ul>
+                <a href="#" class="btn">Choose plan</a>
+            </div>
+            <div class="card">
+                <h4 class="plan-type">Pro</h4>
+                <h2 class="price price-primary">$99<span> / month</span></h2>
+                <select name="price-options" id="priceOptions">
+                    <option value="2500">2500 MAUs</option>
+                    <option value="2200">2200 MAUs</option>
+                    <option value="2000">2000 MAUs</option>
+                </select>
+                <p class="text-primary">Monthly active users</p>
+
+                <ul class="features">
+                    <li>500 MAUs</li>
+                    <li>3 projects</li>
+                    <li>Unlimited guides</li>
+                    <li>Unlimited flows</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Choose plan</a>
+            </div>
+            <div class="card">
+                <h4 class="plan-type">Enterprise</h4>
+                <h2 class="title">Let's talk!</h2>
+                <ul class="features">
+                    <li>500 MAUs</li>
+                    <li>3 projects</li>
+                    <li>Unlimited guides</li>
+                    <li>Unlimited flows</li>
+                    <li>Unlimited guides</li>
+                    <li>Unlimited guides</li>
+                </ul>
+                <a href="#" class="btn">Contact Us</a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

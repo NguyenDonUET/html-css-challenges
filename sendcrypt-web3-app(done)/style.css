@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary: #f5c249;
+  --neutral-1: #787a8d;
+  --neutral-2: #a7aebf;
+  --black: #16171d;
+  --light-dark: #21242d;
+  --border-line: #fff;
+  --white: #fff;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+ul {
+  list-style: none;
+}
+.btn {
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  text-decoration: none;
+  border: none;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn-primary {
+  background: var(--primary);
+  color: var(--black);
+}
+.text-xs {
+  font-size: 0.9rem;
+}
+.text-xl {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+.text-lg {
+  font-size: 2rem;
+}
+.text-md {
+  font-size: 1.25rem;
+}
+.text-base {
+  font-size: 1rem;
+}
+.text-sm {
+  font-size: 1.125rem;
+}
+.text-center {
+  text-align: center;
+}
+.text-primary {
+  color: var(--primary);
+}
+.text-neutral {
+  color: var(--neutral-1);
+}
+.container {
+  max-width: 1150px;
+  margin-inline: auto;
+  padding: 0 22px;
+}
+.container-sm {
+  max-width: 1020px;
+  margin-inline: auto;
+  padding: 0 22px;
+}
+
+/* HEADER */
+.header {
+  padding: 28px 0;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-right: 56px;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.nav ul a {
+  color: var(--neutral-2);
+  font-weight: 400;
+  text-decoration: none;
+}
+.nav ul a:hover {
+  text-decoration: underline;
+}
+
+.header .btn {
+  margin-left: auto;
+}
+/* HERO */
+.hero {
+  padding: 82px 0;
+}
+.hero .container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.hero-content {
+  margin-top: -6%;
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+  flex-basis: 50%;
+}
+.hero-content p {
+  margin-top: 16px;
+  margin-bottom: 56px;
+  color: var(--neutral-1);
+}
+.hero-content .btn {
+  justify-self: start;
+}
+/* FEATURES */
+.features {
+  padding-bottom: 200px;
+}
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 32px;
+}
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 32px;
+  border-radius: 24px;
+  border: 2px solid var(--neutral-1);
+}
+.feature-icon {
+  margin-bottom: 32px;
+}
+.feature-name {
+  margin-bottom: 16px;
+}
+.feature-des {
+  color: var(--neutral-1);
+  max-width: 288px;
+}
+/* CONTACT */
+.contact {
+  padding-bottom: 80px;
+}
+.contact .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 36px;
+  border-radius: 12px;
+  background-color: var(--light-dark);
+  min-width: 426px;
+}
+.contact-form form input {
+  padding: 16px;
+  background-color: var(--black);
+  border-radius: 12px;
+  display: block;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+}
+.contact-form form input::placeholder {
+  color: var(--neutral-1);
+}
+/* TRANSACTION */
+.transactions {
+  margin-bottom: 120px;
+}
+.transaction-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(295px, 1fr));
+  gap: 40px;
+}
+.transaction-item {
+  background-color: var(--light-dark);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 10px;
+}
+.transaction-content span {
+  color: var(--neutral-1);
+}
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 60px;
+  border-top: 1px solid var(--light-dark);
+}
+.socials {
+  display: flex;
+  gap: 20px;
+}

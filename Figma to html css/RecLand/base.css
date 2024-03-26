@@ -1,0 +1,38 @@
+:root {
+  --primary: #021a84;
+  --secondary: #fe4c4c;
+  --text: #171717;
+  --gray: #999;
+  --light-gray: #e5e5e5;
+  --green-text: #2ada66;
+  --blue-text: #021a84;
+  --red-text: #e5532a;
+  --green-gradient: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.6) 100%
+  );
+  --blue-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    #021a84;
+  --red-gradient: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    #e5532a;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+}
+
+.wrapper {
+  max-width: 1160px;
+  margin-inline: auto;
+}

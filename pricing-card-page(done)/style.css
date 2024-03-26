@@ -1,0 +1,206 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* write your CSS here */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+
+:root {
+  --black: #191b1d;
+  --dark-gray: #22262c;
+  --primary: #bc1e4a;
+  --text-color: #fefe;
+  --dark-text: #fefefeb0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  color: var(--text-color);
+  height: 100vh;
+}
+/* common classes */
+.bg-primary {
+  background-color: var(--primary);
+}
+.text-primary {
+  color: var(--primary);
+}
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px 40px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  font-weight: bold;
+  background: transparent;
+  text-transform: capitalize;
+}
+.btn-primary {
+  background-color: var(--primary);
+}
+.btn:hover {
+  background-color: var(--primary);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 12px;
+}
+.pricing {
+  padding-bottom: 48px;
+}
+/* banner */
+.pricing-banner {
+  padding: 14px;
+  text-align: center;
+  max-width: 400px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 0 0 8px 8px;
+}
+.pricing-banner p {
+  color: var(--dark-text);
+  font-size: 0.875rem;
+}
+.trial-val {
+  position: relative;
+}
+.trial-val::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translateY(-64%);
+}
+/* heading */
+.pricing-heading {
+  text-align: center;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+.pricing-heading h4 {
+  font-size: 2.2rem;
+}
+.pricing-options {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.plan-toggle {
+  display: inline-block;
+  background-color: var(--primary);
+  border-radius: 48px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  position: relative;
+  color: var(--dark-gray);
+}
+.toggle-spinner {
+  position: absolute;
+  top: 16%;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50px;
+  transition: all 0.5s ease-in;
+}
+
+.toggle-input:checked + .toggle .toggle-spinner {
+  transform: translateX(30px);
+}
+.toggle-input {
+  display: none;
+}
+
+/* cards */
+.pricing-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+.card {
+  background-color: var(--dark-gray);
+  padding: 32px;
+  padding-inline: 60px;
+  border-radius: 8px;
+}
+.plan-type {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: center;
+}
+.price {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 64px;
+  font-size: 2.6rem;
+}
+.price-primary {
+  margin-bottom: 16px;
+}
+.price span {
+  font-size: 1rem;
+}
+.title {
+  font-size: 2rem;
+  margin-bottom: 64px;
+  text-align: center;
+  margin-top: 28px;
+}
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+.features li::before {
+  content: '';
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  margin-bottom: 2px;
+  margin-right: 8px;
+
+  background-color: var(--primary);
+}
+#priceOptions {
+  padding: 14px 24px;
+  width: 100%;
+  background-color: var(--dark-gray);
+  color: var(--dark-text);
+  font-size: 1.2rem;
+}
+#priceOptions + p {
+  font-size: 0.875rem;
+  margin-left: 18px;
+  margin-top: 8px;
+  margin-bottom: 44px;
+}
+
+@media (min-width: 800px) {
+  .pricing-cards {
+    flex-direction: row;
+  }
+}
